@@ -7,7 +7,7 @@ X=p_train_data_norm2000;
 
 Y=p_train_data_norm2000_target;
 % Y is the label of the training data
-% neutrons are marked as '1' and gamma-rays are marked as '0
+% neutrons are marked as '1' and gamma-rays are marked as '0'
 
 Tree = fitctree(X,Y);
 % ClassificationTree represents a decision tree with binary splits for classification
@@ -32,4 +32,7 @@ FAR_of_Cs  = (Cs_Test_Error_Num./Cs_NUM).*100;
 %% print the false alarm rates 
 fprintf('the FAR of Na is: %.3f%%\n',FAR_of_Na);
 fprintf('the FAR of Cs is: %.3f%%\n',FAR_of_Cs);
+
+
+
 
